@@ -88,7 +88,7 @@ export default class addAttractions extends Component {
     console.log(attraction);
 
     axios.post("https://queencitytoursdouglasbackend.onrender.com/attractions/add", attraction)
-      .then((res) => console.log(res.data));
+      .then(res => console.log(res.data));
 
     this.props.history.push('/attractions');
   };
